@@ -58,6 +58,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 // include your new routes here:
+app.use('/api', require('./routes/file-upload-routes'));
 app.use('/api', require('./routes/thing-routes'));
 
 
